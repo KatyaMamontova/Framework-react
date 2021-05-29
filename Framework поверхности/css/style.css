@@ -1,0 +1,145 @@
+body {
+    align-content: center;
+    background: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+input {
+    margin: 5px;
+    outline: none;
+    width: 40px;
+}
+button {
+    outline: none;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    width: 150px;
+    background: white;
+}
+button:hover {
+    background: rgb(255, 247, 215);
+}
+#headerStripe {
+    padding: 0;
+    margin: 0;
+    height: 45px;
+    background: rgb(225, 240, 255);
+}
+#showGraph2D, #showCalculator,
+#showGraph3D, #showPolyCalculator {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    background: rgb(210, 225, 240);
+    margin: 0;
+    margin-left: 15px;
+    top: 5;
+    border-radius: 10px 10px 0 0;
+}
+#showGraph3D {
+    background: white;
+}
+.hide {
+    display: none;
+}
+
+/*********/
+/*graph2D*/
+/*********/
+canvas {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    z-index: 1;
+}
+#menu, #addSubject {
+    position: absolute;
+    top: 90px;
+    left: 35px;
+    padding: 7px;
+    border-radius: 10px;
+    width: 60px;
+    z-index: 2;
+    background: rgb(255, 220, 170);
+}
+.visible, #options3D, #surfaces {
+    position: absolute;
+    display: block;
+    left: 35;
+    z-index: 2;
+    opacity: 0.75;
+    background: rgb(205, 230, 255);
+    border-radius: 10px;
+    width: 590px;
+    padding: 5px;
+}
+.invisible {
+    display: none;
+}
+
+/************/
+/*calculator*/
+/************/
+#calculator {
+    position: absolute;
+    top: 80px;
+    left: 180px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: rgb(219, 237, 255);
+}
+.info, .controls, .calculator {
+    margin: 15px;
+    padding: 15px;
+    border: rgb(248, 248, 245) solid 1px;
+    border-radius: 12px;
+}
+.inputsCalculator {
+    width: 20px;
+}
+.smallButtons{
+    width: 40px;
+}
+#elemA, #elemB {
+    margin: 20px 0 20px 0;
+}
+#answer {
+    margin: 5px;
+    padding: 5px;
+    background: white;
+}
+img {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#clearElement {
+    background: rgb(255, 220, 220);
+}
+#clearElement:hover {
+    background: rgb(255, 247, 215);
+}
+hr {
+    width: 75px;
+    margin-top: 30px;
+}
+
+/*********/
+/*graph3D*/
+/*********/
+#options3D {
+    position: relative;
+    top: 35px;
+    left: 700px;
+    width: 250px;
+    padding: 15px;
+}
+#surfaces {
+    position: relative;
+    top: 40px;
+    left: 700px;
+    width: 160px;
+    padding: 15px;
+    margin-top: 10px;
+}
